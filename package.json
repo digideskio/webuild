@@ -23,7 +23,7 @@
     "request": "2.60.0",
     "serve-favicon": "2.3.0",
     "sitemap": "1.0.0",
-    "webuild-main": "git@github.com:webuildorg/webuild-main.git"
+    "webuild-main": "webuildorg/webuild-main"
   },
   "devDependencies": {
     "bower": "1.4.1",
