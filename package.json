@@ -22,6 +22,10 @@
     "request": "2.60.0",
     "serve-favicon": "2.3.0",
     "sitemap": "1.0.0",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-stylus": "0.22.0",
+    "grunt-contrib-uglify": "0.9.1",
+    "grunt-jsbeautifier": "0.2.10",
     "webuild-main": "webuildorg/webuild-main"
   },
   "devDependencies": {
