@@ -1,52 +1,33 @@
 {
-  "name": "webuild.sg",
+  "name": "webuildsg",
   "version": "2.12.0",
-  "homepage": "http://webuild.sg",
+  "homepage": "https://webuild.sg",
   "keywords": "developer, designer, maker, engineer, open source, open events, open community",
   "private": true,
+  "main": "index",
   "scripts": {
-    "start": "node app",
+    "start": "node index",
     "test": "grunt travis --verbose && mocha test --recursive && mocha test --recursive --require blanket --reporter html-cov > coverage.html",
-    "postinstall": "bower install && grunt build",
     "routine": "grunt cleanup && npm outdated && bower list && npm-check-updates -u && npm i && grunt && npm test && npm outdated"
   },
   "dependencies": {
     "body-parser": "1.13.3",
-    "bower": "1.4.1",
-    "buffer-crc32": "0.2.5",
     "cli-color": "1.0.0",
     "compression": "1.5.2",
-    "cookie-signature": "1.0.6",
     "cors": "2.7.1",
     "errorhandler": "1.4.2",
     "express": "4.13.3",
-    "get-urls": "5.0.0",
-    "github": "0.2.4",
-    "grunt-cli": "0.1.13",
-    "grunt-contrib-stylus": "0.22.0",
-    "grunt-contrib-uglify": "0.9.1",
-    "grunt-jsbeautifier": "0.2.10",
-    "ical": "0.4.0",
     "ical-generator": "0.2.2",
-    "is-number": "2.0.2",
-    "jade": "1.11.0",
-    "jsonfile": "2.2.1",
-    "markdown": "0.5.0",
-    "mess": "0.1.2",
+    "jade": "^1.11.0",
     "moment-timezone": "0.4.0",
-    "passport": "0.2.2",
-    "passport-auth0": "0.3.0",
-    "prequest": "0.0.3",
-    "promise": "7.0.4",
     "request": "2.60.0",
     "serve-favicon": "2.3.0",
     "sitemap": "1.0.0",
-    "striptags": "2.0.2",
-    "word-overlap": "2.4.0"
+    "webuild-main": "git@github.com:webuildorg/webuild-main.git"
   },
   "devDependencies": {
-    "blanket": "1.1.7",
     "bower": "1.4.1",
+    "blanket": "1.1.7",
     "chai": "3.2.0",
     "coveralls": "2.11.3",
     "grunt": "0.4.5",
@@ -60,25 +41,9 @@
     "grunt-jsbeautifier": "0.2.10",
     "grunt-jscs": "2.0.0",
     "mocha": "2.2.5",
-    "mocha-lcov-reporter": "0.0.2",
-    "nconf": "0.7.2"
+    "mocha-lcov-reporter": "0.0.2"
   },
   "engines": {
     "iojs": "2.2.x"
-  },
-  "config": {
-    "blanket": {
-      "pattern": [
-        "archives/index.js",
-        "countdown/index.js",
-        "events/eventbriteEvents.js",
-        "events/facebookEvents.js",
-        "events/index.js",
-        "events/meetupEvents.js",
-        "events/utils.js",
-        "repos/index.js"
-      ],
-      "data-cover-never": "node_modules"
-    }
   }
 }
