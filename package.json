@@ -6,7 +6,8 @@
   "private": true,
   "main": "index",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "postinstall": "bower install && grunt build"
   },
   "dependencies": {
     "body-parser": "1.13.3",
